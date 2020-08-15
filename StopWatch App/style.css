@@ -1,0 +1,61 @@
+body{
+
+
+    background-color:#b2b2ff !important
+
+}
+.btn {
+    background-color: grey;
+    width: 45px;
+    margin: 1px;
+    box-shadow: 2px 2px 2px;
+    
+    color: tomato;
+}
+.results{
+
+width: 100%;
+
+}
+
+.main{
+
+
+    border: 2px solid black;
+width: 250px;
+margin: 0 auto;
+
+
+}
+
+.halfBtn{
+
+
+background-color: grey;
+width: 97px;
+margin-top: 5px;
+color: tomato;
+}
+/* 
+.clearBtn{
+
+
+width: 100%;
+
+
+} */
+
+
+.clearBtn {
+    width: 100%;
+    margin-top: 10px;
+    background-color: grey;
+color: tomato;
+}
+
+.alert-warning{
+
+
+text-align: center;
+
+}
