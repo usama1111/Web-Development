@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bantoo baba</title>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyAacqT8RBdgMDEBEeh8Np7ADIbtTe2FXdw",
+          authDomain: "voetbal-academie-a3b8e.firebaseapp.com",
+          databaseURL: "https://voetbal-academie-a3b8e.firebaseio.com",
+          projectId: "voetbal-academie-a3b8e",
+          storageBucket: "voetbal-academie-a3b8e.appspot.com",
+          messagingSenderId: "873980681118",
+          appId: "1:873980681118:web:bb59174314dbdac200948f",
+          measurementId: "G-J67ZF3Y2BT"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+</head>
+<body>
+    
+
+    <div>
+
+        <br />
+        <input id="email" type="text" placeholder="email">
+        <br />
+        <input type="password" id="pass">
+    
+</br>
+
+        <button onclick="saveData()">Save Data</button>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
