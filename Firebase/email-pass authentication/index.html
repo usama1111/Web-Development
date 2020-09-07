@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase login and signup</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyDeN10R70i6L9yV0RyghHlc9NNcMobss9c",
+          authDomain: "apptesting-fe8e8.firebaseapp.com",
+          databaseURL: "https://apptesting-fe8e8.firebaseio.com",
+          projectId: "apptesting-fe8e8",
+          storageBucket: "apptesting-fe8e8.appspot.com",
+          messagingSenderId: "645522657787",
+          appId: "1:645522657787:web:7dda54f2178881fe95fb5e",
+          measurementId: "G-6LPJG6L63S"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="centre">
+
+<h1>SIGNUP FORM</h1>
+<input type="text" id="signup-email">email
+<br/>
+<input type="password" id="signup-pass" >password
+<br/>
+<button type="button" onclick="signup()">signuip</button>
+
+<p id="demo"></p>
+
+
+
+<h1>LOGIN FORM</h1>
+
+<input type="text" id="login-email">email
+<br/>
+<input type="password" id="login-pass" >password
+<br/>
+<button type="button" onclick="login()">login</button>
+
+<p id="demo"></p>
+
+
+<button type="button" onclick="facebook()">Continue with facebook</button>
+
+</div>
+
+<script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
