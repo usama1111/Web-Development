@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="cloud.gif" id="cloud" />
+    <img src="cloud.gif" id="cloud2" />
+    <script>
+        var elem = document.querySelector('#cloud');
+
+        var animatedElem = elem.animate([
+            { transform: 'translate(0,20px)' },
+            { transform: 'translate(550px,80px)' },
+            { transform: 'translate(80vw,20px)' },
+            { transform: 'translate(550px,80px)' },
+            { transform: 'translate(0,20px)' },
+
+        ], {
+            duration: 15000,
+            iterations: Infinity
+        })
+
+        document.addEventListener("mousedown", ()=>{
+            animatedElem.pause();
+        })
+
+        document.addEventListener("mouseup", ()=>{
+            animatedElem.play();
+        })
+
+var bantoo = document.getElementById("cloud2");
+
+var cloud2 = bantoo.animate([
+
+{ transform : 'translate(0px,220px)' },
+
+{ transform : 'translate(900px,220px)' },
+
+{ transform : 'translate(900px,-100px)' },
+
+{ transform : 'translate(0px,220px)' }
+
+
+],{
+
+    duration :  6000,
+    iterations : Infinity 
+})
+
+
+
+    </script>
+</body>
+
+
+
+</html>
