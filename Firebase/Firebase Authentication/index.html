@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT APPLICATION</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+
+    <script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyDeN10R70i6L9yV0RyghHlc9NNcMobss9c",
+        authDomain: "apptesting-fe8e8.firebaseapp.com",
+        databaseURL: "https://apptesting-fe8e8.firebaseio.com",
+        projectId: "apptesting-fe8e8",
+        storageBucket: "apptesting-fe8e8.appspot.com",
+        messagingSenderId: "645522657787",
+        appId: "1:645522657787:web:7dda54f2178881fe95fb5e",
+        measurementId: "G-6LPJG6L63S"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+<script src="app.js"></script>
+</head>
+<body>
+    
+<button onclick="facebook()">Login with facebook</button>
+<h2 id="name"></h2>
+</body>
+</html>
